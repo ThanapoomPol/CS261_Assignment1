@@ -1,3 +1,4 @@
+# Move these file outside the project folder
 # Use the official Node.js image from Docker Hub
 FROM node:18
 
