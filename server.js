@@ -28,9 +28,6 @@ app.post("/api/auth", (req, res) => {
 		body: JSON.stringify({ UserName: username, PassWord: password }),
 	})
 		.then((response) => {
-			if (!response.ok) {
-				throw new Error(`API error: ${response.statusText}`);
-			}
 			return response.json();
 		})
 		.then((data) => {
